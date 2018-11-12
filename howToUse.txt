@@ -1,0 +1,13 @@
+node app - start game.
+
+All menues are hidden. Move mouse on them to make them visible.
+
+Move mouse to the middle of left border. The help element became visible.
+Use it in the correct way.
+
+Stop button is situated in the middle of top border.
+Work menu - in the middle of bottom border.
+
+Use this app carefully - there are some bugs. If smth go wrong - restart.
+
+Smth is going wrong with save/load. Maybe I change them, and now they don't work.

@@ -1,0 +1,55 @@
+<html>
+<canvas id="myCanvas" style="position: absolute; left: 0; top: 0; background-color:lightskyblue " width=1600 height=794 ></canvas>
+<head>
+    <meta charset = "utf-8">
+    <title>Site</title>
+    <script src="jsFile.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="cssFile.css">
+</head>
+<body>
+
+<div class="buttonBlock" id="buttonBlock">
+    <button  class="StopButton" onclick="stopButtonClicked()" id="StopButton">Stop</button>
+
+</div>
+<div class="infoPanelShowBlock">
+    <div class="infoPanel" id="infoPanel" onmousemove="style.visibility=hidden">
+        <div class="bigText">Chosen Object:</div>
+        <div class="chosenObjectInfo" id="chosenObjectInfo">Nothing</div>
+        <div class="bigText">Work Info:</div>
+        <div>Want to change anything -> stop the game</div>
+        <div>Add ball - press button & double click</div>
+        <div>Draw speed - mousedown on ball -> mousemove ->mouseup</div>
+        <div>Prove changes & delete - press button "Change object" and then use</div>
+        <div>Select not walls but wallpoints</div>
+    </div>
+</div>
+
+
+<div class="instrumentPanelController">
+    <div class="instrumentPanel">
+        <div  class="addBallSize" id="ballSize"></div>
+        <div class="addBallColor" id="ballColor"></div>
+        <button class="addBall" id="addBallButton" onclick="addNewBall()">Add Ball</button>
+        <div class="addWallColor" id="wallColor"></div>
+        <button class="addWall" id="addWallButton" onclick="addNewWall()">Add Wall</button>
+        <button class="selectObject" id="selectButton" onclick="selectObject()">Change object</button>
+        <button class="proveChanges" id="prove">Prove changes</button>
+        <button class="deleteObject" id="delete">Delete</button>
+        <button class="saveObject" id="save" onclick="saveGame()">Save</button>
+        <button class="loadObject" id="load" onclick="loadGame()">Load</button>
+    </div>
+</div>
+
+</body>
+<script>
+    preStartWork();
+    var canvas=document.getElementById("myCanvas");
+    canvas.position="absolute";
+    canvas.style.top="0px";
+    canvas.style.left="0px"
+
+    console.log(window.innerHeight);
+</script>
+</html>
